@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>감염병정보｜감염병 : 질병관리본부</title>
+<style type="text/css">
+*{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style-type: none;
+}
+.clear{
+	clear: both;
+}
+#page{
+	width: 1300px;
+	margin: auto;
+	border: 0px solid #bbbbbb;
+
+}
+header{
+	width: 1920px;
+	height: 100px;
+	margin-left: -300px;
+	border: 0px solid #bbbbbb;
+	position: fixed;
+	background-color: white;
+	z-index: 1;
+}
+nav{
+	width: 1920px;
+	height: 60px;
+	margin-top: 100px;
+	margin-left: -300px;
+	padding-left: 350px;
+	border-top: 1px solid #e6e6e6;
+	border-bottom: 1px solid #bbbbbb;
+	position: fixed;
+	background-color: white;
+	z-index: 1;
+}
+nav li{
+	display: inline-block;
+	margin: 20px 30px 30px 20px;
+	font-size: 18px;
+}
+section{
+	float: left;
+	margin: 175px 0 0 10px;
+	border: 0px solid #bbbbbb;
+	padding-bottom: 20px;
+}
+section img{
+	padding-left: 35px;
+}
+footer{
+	width: 1920px;
+	height: 140px;
+	padding: 20px 0 10px 0;
+	margin-left: -320px;
+}
+#footer1{
+		background-color: #f5f6fa;
+}
+#footer2{
+	background-color: white;
+}
+a{
+	text-decoration:none;
+}
+#aside1{
+	float: right;
+	margin-top: 300px;
+	margin-left: 1490px;
+	position: fixed;
+}
+#aside1 li{
+	text-align: center;
+	margin-bottom: 5px;
+	}
+#aside2{
+	float: left;
+	border: 0px solid #bbbbbb;
+	margin: 210px 10px 10px 60px;
+	width: 265px;
+	color: #666666;
+	font-size: 16.8px;
+}
+#aside2 li{
+padding: 15px 0 15px 10px;
+border-bottom: 1px solid #e6e6e6;
+}
+#aside2 li img:hover{
+	transform: rotate( 180deg );
+	transition: all ease 0.5s;
+}
+#aside2_li_bg{
+	background-color: #21a089;
+	color: white;
+}
+#aside2 img{
+	margin-bottom: -6px;
+}
+#address{
+float: left;
+margin: 10px 0 0 370px;
+}
+#customer{
+float: right;
+margin: 8px 350px 0 50px;
+}
+#bottom {
+	margin: auto;
+	padding-left: 15px;
+	text-align: center;
+}
+#logo{
+	float: left;
+	margin-top: 20px;
+	margin-left: 360px;
+}
+#top{
+	float: right;
+	position: absolute;
+	margin: 0px 0 0 1260px;
+	top: 25px;
+}
+#img_r {
+	float: right;
+}
+#sub2 {
+	margin-top: 80px;
+	border-top: 1px solid #bbbbbb;
+	border-bottom: 1px solid #f2f2f2;
+}
+#sub2 img{
+	padding: -10px 40px 0 55px;
+	margin-bottom: -20px;
+}
+.line{
+		margin: 20px 0 10px 10px;
+		border: 1px solid  #000000;
+		width: 910px;
+	}
+.line2{
+		 margin: 10px;
+		 border-bottom: 1px solid  #e6e6e6;
+		 width: 912px;
+	}
+#main1{
+	list-style-type: none;
+}
+#main2{
+	padding-left: 10px;
+}
+#ex_title{
+	color:#11416b;
+	padding: 20px 0 5px 0;
+}
+#ex_title img{
+	margin-left: -32px;
+	margin-bottom: -1px;
+	font-size: 20px;
+}
+#ex{
+	padding-left:10px;
+	margin: 10px 10px 10px 10px;
+}
+#ex li{
+	padding: 4px;
+	font-size: 15px;
+}
+#ex img{
+	margin-left: -32px;
+	margin-bottom: -5px;
+}
+
+.s2 {
+	position:relative;
+	right: 15px;
+}
+.s2 img { 
+	display:block; 
+	position:absolute; 
+	transition: opacity 0.5s; 
+}
+.s2:hover img:last-child {
+	opacity:0
+}
+.s3 {
+	position:relative;
+	top: 98px;
+	right: 9px;
+}
+.s3 img { 
+	display:block; 
+	position:absolute; 
+	transition: opacity 0.5s; 
+}
+.s3:hover img:last-child {
+	opacity:0
+}
+.s4 {
+	position:relative;
+	top: 200px;
+	right: 12px;
+}
+.s4 img { 
+	display:block; 
+	position:absolute; 
+	transition: opacity 0.5s; 
+}
+.s4:hover img:last-child {
+	opacity:0
+}
+#search{
+	height: 40px;
+	width: 500px;
+	border: 2px solid #21a089;
+	background: white;
+	position: static;
+	margin: 30px 0 0 650px;
+}
+input{
+	font-size: 15px;
+	width: 430px;
+	padding:11px;
+	float: left;
+	outline: none;
+	border: 0px;
+	font-weight: 700;
+}
+button{
+	border: 0px;
+	outline: none;
+	float: right;
+	margin-right: -2px;
+}
+#sub4 {
+	margin: 80px 100px 20px 0px;
+	border-top: 1px solid #bbbbbb;
+	border-bottom: 1px solid #f2f2f2;
+	width: 1485px;
+	padding: 0 110px 0 375px;
+}
+#sub4 img{
+	margin-bottom: -20px;
+}
+#topMenu {
+            height: 20px;  
+            width: 55px;       /* [변경] 하위 메뉴와 동일하게 맞춤 */
+            position: relative;
+            border-bottom: 1px solid #bbbbbb;
+            text-align: left;
+
+
+            background-color: white; /* [추가] 늘어난만큼 배경색도 보이도록 수정 */
+    }
+    #topMenu ul {           /* 메인 메뉴 안의 ul을 설정함: 상위메뉴의 ul+하위 메뉴의 ul */
+        list-style-type: none;  
+        margin: 0px;            
+        padding: 0px;           
+    }
+    #topMenu ul li {            /* 메인 메뉴 안에 ul 태그 안에 있는 li 태그의 스타일 적용(상위/하위메뉴 모두) */
+        color: white;               
+        background-color: white;  
+        float: left;                
+        line-height: 30px;          
+        vertical-align: middle;     
+        text-align: center;         
+        position: relative;         
+    }
+    .menuLink, .submenuLink {           /* 상위 메뉴와 하위 메뉴의 a 태그에 공통으로 설정할 스타일 */
+        text-decoration:none;               
+        display: block;                     
+        width: 150px;                                                       
+    }
+    .menuLink {     /* 상위 메뉴의 글씨색을 흰색으로 설정 */
+    }
+    .topMenuLi:hover .menuLink {    /* 상위 메뉴의 li에 마우스오버 되었을 때 스타일 설정 */
+        color: #21a089;                 
+        background-color: white;
+        width: 100px;
+    }
+    .longLink {     /* 좀 더 긴 메뉴 스타일 설정 */
+        width: 0px;   
+    }
+    .submenuLink {          /* 하위 메뉴의 a 태그 스타일 설정 */
+        color: #21a089;             
+        background-color: white;      /* [변경] 배경색 변경 */
+        -border: solid 1px black;    /* [삭제] 테두리 삭제 */
+        -margin-right: -1px;         /* [삭제] 공백 보정 삭제 */
+    }
+    .submenu {              /* 하위 메뉴 스타일 설정 */
+        position: absolute;     
+        height: 0px;            
+        overflow: hidden;       
+        transition: height .4s; 
+        -webkit-transition: height .4s; 
+        -moz-transition: height .4s;
+        -o-transition: height .4s; 
+        width: 1920px;           
+        left: 0;
+        margin-top: -19px;
+        padding: 20px 0 0 290px;              
+
+        background-color: white; /* [추가] 하위 메뉴 전체에 배경색 설정 */
+    }
+    .submenu li {
+        display: inline-block;
+        padding-left: 60px;
+         font-size: 17px;
+         font-weight: 800;
+         color: #323232;
+
+    }
+    .topMenuLi:hover .submenu { 
+        height: 220px;           
+    }
+    .submenuLink:hover {        
+        color: #21a089;                 
+        background-color: #21a089;  
+    }
+    .submenu td{
+    	font-size: 14px;
+    	color: #787878;
+    }
+</style>
+
+</head>
+<body id="page">
+
+	<header>
+		<div id="logo">
+		
+		<a href="./index.html"><img src="./img/logo.png"></a>
+	</div>
+		<div id="search">
+		<input type="text" placeholder="검색어를 입력해주세요.">
+		<button><img src="./img/search.PNG"></button>
+	</div>
+	<div id="top">
+		<img src="./img/top_one.PNG">
+		<a href="./intro.html"><img src="./img/language.PNG"></a>
+	</div>
+	</header>
+
+	<div class="clear"></div>
+
+	<nav>
+		<ul class="topMenuLi">
+			<li id="topMenu"> <div class="con"><span style="color:#21a089; border-bottom: 3px solid #21a089; padding-bottom: 14px; "><a class="menuLink" href="./contents.html">감염병</a></span></div></li>
+			<ul class="submenu">
+				<li><span style="position: absolute; top: 20px; padding-right: 100px;">감염병정보</span></li>
+				<li><span style="position: absolute; top: 40px; left: 550px; padding-right: 100px; border-left: 1px solid #bbbbbb; height:; 100px;">
+					<table>
+				<tr><th>해외감염정보</th></tr>
+				<tr>
+					<td><br>
+					· 해외감염병NOW<br><br>
+					· 예방접종정보<br><br>
+					· 해외여행건강정보<br><br>
+					· 검역관리
+				</td>
+			</tr>
+			</table>
+		</span>
+			</li>
+				<li><span style="position: absolute; top: 20px; left: 780px; padding-right: 100px;">감염병유행정보</span></li>
+				<li><span style="position: absolute; top: 20px; left: 1020px; padding-right: 100px;">결핵</span></li>
+				<li><span style="position: absolute; top: 20px; left: 1200px; padding-right: 100px;">예방접종</span></li>
+				<li><span style="position: absolute; top: 20px; left: 1400px; padding-right: 100px;">감염병간행물</span></li>
+			</ul>
+			<li> 건강정보 </li>
+			<li> 정책정보 </li>
+			<li> 연구개발 </li>
+			<li> 알림·자료</li>
+			<li> 간행물·통계</li>
+			<li> 민원·정보공개 </li>
+			<li> 기관소개 </li>
+			<li> 사업별홈페이지 </li>
+		</ul>
+	</nav>
+
+	<div class="clear"></div>
+
+	<aside>
+		<ui id="aside2">
+			<li> <span style="font-size:25px; margin-left: -10px;">감염병</span>  </li>
+			<li id="aside2_li_bg"> <b>감염병정보</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <img src="./img/up.PNG"> </li>
+			<li> <b>해외감염정보</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <img src="./img/down.PNG"></li>
+			<li> <b>감염병유행정보<img src="./img/ex2.PNG"></b> &emsp;&emsp;&emsp; &nbsp; &nbsp; <img src="./img/down.PNG"></li>
+			<li> <b>결핵<img src="./img/ex2.PNG"></b> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; <img src="./img/down.PNG"></li>
+			<li> <b>예방접종<img src="./img/ex2.PNG"></b> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; <img src="./img/down.PNG"></li>
+			<li> <b>감염병간행물</b> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; <img src="./img/down.PNG"></li>
+		</ui>
+	</aside>
+	<section>
+		<ul id="main1">
+			<li id="img_r"> <img src="./img/home.PNG"> </li>
+			<li> <br><br> &nbsp; <span style="font-size: 26px"><b>감염병정보</b> </span>
+			<span style="position: absolute; left:1440px; top:205px;">
+				<img src="./img/share.PNG">
+			</span>
+				<span style="position: absolute; left:1495px; top:210px;">
+				<img src="./img/print.PNG"> 
+			</span>
+			</div>
+		</li>
+			<li> <div class="line"></div> </li>
+			<li> <span style="position: relative; left: -20px;"><img src="./img/day.PNG"></span>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <img src="./img/view.PNG"> </li>
+			<li> <div class="line2"></div> </li>
+			<li><br><br>
+				<span style="margin-left: -20px;"><img src="./img/contents_main.PNG"></span></li>
+		</ul>
+
+		<div id=main2>
+		<h3 id="ex_title"> <img src="./img/rectangle.png"> 감염병포털 소개 </h3>
+		<ul id="ex">
+			<li>법정감염병(전수/표본)의 현황(통계) 및 올바른 정보를 국민들이 쉽게 접근할 수 있는 <span style= "color:#000080; border-bottom: 1px solid #075290;">감염병 정보 포털사이트</span><img src="./img/ex.PNG" width="17px"></li>
+		</ul>
+
+		<h3 id="ex_title"> <img src="./img/rectangle.png"> 통계</h3>
+		<ul id="ex">
+			<li>· <span style= "color:#075290; border-bottom: 1px solid #075290;">전수감시 감염병</span><img src="./img/ex.PNG" width="17px">: 전수감시 감염병에 대한 주요통계, 질병별 통계, 지역별 통계, 성별/연령별 통계에 대한 통계 </li>
+			<li>· <span style= "color:#075290; border-bottom: 1px solid #075290;">표본감시 감염병</span><img src="./img/ex.PNG" width="17px"> : 표본감시 감염병에 대한 통계 </li>
+			<li>· <span style= "color:#075290; border-bottom: 1px solid #075290;">비브리오 감시</span><img src="./img/ex.PNG" width="17px"> : 해수에서 측정한 비브리오 통계 </li>
+		</ul>
+
+		<h3 id="ex_title"> <img src="./img/rectangle.png"> <span style= "border-bottom: 1px solid #075290;">지침</span><img src="./img/ex.PNG"></h3>
+		<ul id="ex">
+			<li>· 법정감염병의 증상, 진단 및 치료, 신고기준, 예방과 같은 정보 </li>
+			<li>· 감염병 관리, 각 기관에서 해야하는 수행체계, 감시체계, 실험실 검사, 역학조사, 환자관리/접촉자 관리, 방역관리에 대한 정보 </li>
+		</ul>
+
+		<h3 id="ex_title"> <img src="./img/rectangle.png"> 발간자료</h3>
+		<ul id="ex">
+			<li>· <span style= "color:#075290; border-bottom: 1px solid #075290;">감시연보</span><img src="./img/ex.PNG" width="17px"> : 감염병 신고·보고된 법정감염병 현황을 분석 정리한 자료 </li>
+			<li>· <span style= "color:#075290; border-bottom: 1px solid #075290;">역학조사연보</span><img src="./img/ex.PNG" width="17px"> : 시·군·구 역학조사반의 신고 접수된 수인성·식품매개 감염병 집단발생에 분석 정리한 자료 </li>
+			<li>· <span style= "color:#075290; border-bottom: 1px solid #075290;">주간소식지</span><img src="./img/ex.PNG" width="17px"> : 표본감시 감염병 주간 정보 </li>
+			<li>· <span style= "color:#075290; border-bottom: 1px solid #075290;">실험실 소식지 정보</span><img src="./img/ex.PNG" width="17px"> : 병원체 및 매개체 주간 감시 정보 </li>
+		</ul>
+	</div>
+	</section>
+	<aside>
+		<ul id="aside1">
+			<li> <img src="./img/s1.PNG"> </li>
+			<li class="s2"> <img src="./img/s2_2.png"><img src="./img/s2.PNG"> </li>
+			<li class="s3"> <img src="./img/s3_2.png"><img src="./img/s3.PNG"> </li>
+			<li class="s4"> <img src="./img/s4_2.png"><img src="./img/s4.PNG"> </li>
+		</ul>
+	</aside>
+	<div class="clear"></div>
+	<footer id="footer2">
+	<div id="sub4">
+		<img src="./img/bottom.PNG">
+	</div>
+</footer>
+	<div class="clear"></div>
+	<footer id="footer1">
+		<div id="bottom">
+			<img src="./img/bottom2.PNG">
+		</div>
+		<div id="address">
+			<img src="./img/address.PNG">
+		</div>
+		<div id="customer">
+			<img src="./img/customer.PNG">
+		</div>
+	</footer>
+
+</body>
+</html>
