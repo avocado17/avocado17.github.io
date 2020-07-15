@@ -1,11 +1,228 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<title>1851026 한예솔</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		body{
+			margin: auto;
+			background-image: url("./img/bg2.png");
+			border: 2px dotted #534EB5;
+			border-radius: 30px;
+			width: 1200px;
+		}
+		h1{
+			color: #FFFBA8;
+			margin: 20px;
+			text-align: center;
+		}
+		table{
+			padding: 10px;
+			text-align: center;
+			margin: 20px auto;
+		}
+		tbody tr:nth-child(even){
+			background-color: #C3E6DF;
+		}
+
+		.s1{
+			text-shadow: 0px 0px 5px #534EB5;
+		}
+		.s1:hover{
+			background-color: #64ACFA;
+			border-radius: 100px;
+		}
+		.s2{
+			color: #534EB5;
+			text-align: center;
+			margin: 20px;
+		}
+		.s3{
+			text-decoration: underline;
+			padding: 5px;
+		}
+
+		.line{
+			 margin: 20px;
+			 padding: 10px;
+			 border-top: 3px dashed #cccccc;
+		}
+		.line2{
+			margin: auto;
+			padding: 10px;
+			border-top: 3px dashed #cccccc;
+			width: 300px;
+		}
+		.header{
+			text-align: center;
+			padding: 10px;
+		}
+		.favorite{
+			border: 2px solid #FFA8BC;
+			border-radius: 10px;
+		}
+		.specialty{
+			border: 2px solid #FAC85C;
+			border-radius: 10px;
+		}
+		.lately{
+			border: 2px solid #EBE21D;
+			border-radius: 10px;
+		}
+		.lately img:hover{
+			box-shadow: 5px 5px 10px gray;
+			transform: translate(5px, -5px);
+		}
+		.hate{
+			border: 2px solid #84D16B;
+			border-radius: 10px;
+		}
+		.ing{
+			border: 2px solid #5CA8FA;
+			border-radius: 10px;
+			margin-bottom: 80px;
+		}
+		#static{
+			width: 1200px;
+			height: 10px;
+			position: static;
+		}
+		#book{
+			position: absolute;
+			width: 100px;
+			top: 350px;
+			left: auto;
+		}
+		#monitor{
+			position: absolute;
+			width: 100px;
+			top: 1250px;
+			left: auto;
+		}
+
+	</style>
 </head>
 <body>
-<center>
-<p>
-<img src="./img/pang.jpg" width="500px"> <p>
-<a href="index.html">메인으로 가기</a>
+
+	<div id="monitor"><img src="./img/monitor.png"> </div>
+	<audio autoplay controls> <source src="./audio/1.mp3" allow="autoplay" type="audio/mp3"></audio>
+	<h1 class="s1"> 안녕하세요! </h1>
+	<p class="s2"> 1851026 한예솔의 자기소개 홈페이지 입니다! </p>
+	
+	<div class="line"></div>
+
+	<div id="static"></div>
+	<div id="book"><img src="./img/book.png"> </div>
+
+	<div class="header"> <img src="./img/favorite.png" width="80px"> </div>
+	<table class="favorite" border="0" align="center" width="700px">
+			<tr>
+				<td> 저의 취미는 <span class="s3"> 소설 읽기, 게임, 영화 감상</span>입니다. </td> 
+			</tr>
+			<tr> 
+				 <td>소설 장르는 다양하게 읽는 편이며, 게임은 주로 rpg게임을 하는 편입니다. <br>영화는 넷플릭스에서 자주 감상하며 최근 본 영화는 "악마는 프라다를 입니다." 입니다!</td>
+			</tr>
+			<tr>
+				<td> <br> <a href="www.netflix.com"> <img src="./img/netflix_logo.png" width="100px"> </a><br>▲넷플릭스 바로가기</td>
+			</tr>
+	</table>
+
+	<br><br>
+
+	<div class="line2"></div>
+
+	
+	<div class="header"> <img src="./img/specialist.png" width="80px"> </div>
+	<table class="specialty" border="0" align="center" width="700px">
+		<tr>
+			<td> 특기는 <span class="s3"> 요리, 베이킹</span>입니다.</td>
+		</tr>
+		<tr>
+			<td> 어렸을 때부터 자주 먹고 싶은 음식이 있으면 만들어먹었고 <br> 요리 채널도 자주 보고 베이킹에도 관심이 있던지라 자연스럽게 특기가 되었습니다! </td>
+		</tr>
+		<tr>
+			<td> <img src="https://pbs.twimg.com/media/EXUG9jVVcAAkIht?format=jpg&name=small" width="150px"> <img src="https://pbs.twimg.com/media/EWRWeT6U8AEZpn4?format=jpg&name=medium" width="150px">
+			</td>
+		</tr>
+		<tr>
+			<td> ▲ 위 사진은 제가 만든 푸딩이랑 크레이프 케잌 입니다! </td>
+		</tr>
+	</table>
+
+<br><br>
+
+	<div class="line2"></div>
+
+		<div class="header"> <img src="./img/lately.png" width="200px"> </div>
+	<table class="lately" border="0" align="center" width="700px">
+		<tr>
+			<td> 제가 최근에 빠진 것들은 <span class="s3"> 여행 v-log 감상, 유튜브 반려동물 영상</span>입니다.</td>
+		</tr>
+		<tr>
+			<td> 최근 코로나로 제가 원래 가고자 했던 여행 계획을 다 취소하면서 <br>생긴 취미가 바로 여행 브이로그 시청입니다. <br>
+			제가 즐겨보고 있는 브이로그 유튜버는 '샒의 삶' 입니다!
+		</td>
+	</tr>
+		<tr>
+			<td>
+			유튜브 동물 영상은 사실 최근은 아니지만 최근에 새로 빠진 동물 유튜버가 있어 최근 빠진 것들에 적었습니다!
+		</td>
+	</tr>
+	<tr>
+		<td> 제가 최근에 빠진 동물 유튜버는 초코푸들인 '속삭이는 몽자' 입니다!
+		</td>
+	</tr>
+	<tr> 
+		<td>
+			<a href="https://www.youtube.com/channel/UC0ssa8zC_3oif4iZcUe5VUg"> <img src="https://yt3.ggpht.com/a/AATXAJyCj8Ytr7zjL6eBH77EJbwCczIMRyUQTcTf1w=s100-c-k-c0xffffffff-no-rj-mo"> </a>
+			<a href="https://www.youtube.com/user/CHUCHU7325"> <img src="https://yt3.ggpht.com/a/AATXAJzR9Qs1beYBQ8e_9tOQ2tJIo3y-X1G7KTRpsg=s100-c-k-c0xffffffff-no-rj-mo"></a> <br> ▲ 유튜브 채널 바로가기
+		</td>
+	</table>
+
+	<br><br>
+
+	<div class="line2"></div>
+
+
+	<div class="header"> <img src="./img/hate.png" width="200px"> </div>
+	<table class="hate" border="0" align="center" width="700px">
+		<tr>
+			<td> 제가 싫어하는 것은 <span class="s3">북어</span>입니다. </td>
+		</tr>
+		<tr>
+			<td> 식감이 마음에 들지 않아 좋아하지 않는 음식입니다. 또 어렸을 적 안좋은 추억이 남아 정말 웬만한 일이 아니고서야 입에 대는 일이 없습니다. </td>
+		</tr>
+		<tr>
+			<td> <img src="./img/hate.jpg" width="200px">
+			</td>
+		</tr>
+	</table>
+	
+	<br><br>
+
+	<div class="line2"></div>
+
+	<div class="header"> <img src="./img/ing.png" width="300px"> </div>
+	<table class="ing" border="0" align="center" width="700px">
+		<tr>
+			<td> 요즘 하고 있는 것은 <span class="s3"> 캡스톤 작품 제작</span> 입니다.</td>
+		</tr>
+		<tr>
+			<td> 이번에 졸업반이 되면서 팀을 짜고 캡스톤 작업을 하게 되었습니다! 처음 하는 작업들이 많아 이모저모 어려운 일들도 많지만 열심히 하고 있습니다! </td>
+		</tr>
+		<tr>
+			<td> <img src="./img/4.png" width="400px">
+			</td>
+		</tr>
+	</table>
+	<table>
+		<td>
+			<a href="./index.html"> 메인으로 돌아가기
+		</td>
+	</table>
 </body>
 </html>
