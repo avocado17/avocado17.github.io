@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>감염병정보｜감염병 : 질병관리본부</title>
+	<title>질병관리본부</title>
 <style type="text/css">
 *{
 	padding: 0;
@@ -17,6 +17,9 @@ li{
 	width: 1300px;
 	margin: auto;
 	border: 0px solid #bbbbbb;
+	background-image: url('./img/bg.png');
+	background-repeat: repeat-y;
+
 }
 header{
 	width: 1920px;
@@ -47,23 +50,30 @@ nav li{
 }
 section{
 	float: left;
-	margin: 175px 0 0 10px;
+	margin-top: 10px;
+	border: 0px solid #bbbbbb;
 	padding-bottom: 20px;
+	padding-left: 70px;
 }
-section img{
-	padding-left: 35px;
+#aside1{
+	float: right;
+	margin-top: 150px;
+	margin-left: 1490px;
+	position: fixed;
+}
+#aside1 li{
+	text-align: center;
+	margin-bottom: 5px;
+
 }
 footer{
 	width: 1920px;
 	height: 140px;
 	padding: 20px 0 10px 0;
-	margin-left: -300px;
-}
-footer img{
-	margin-left: -35px;
+	margin-left: -320px;
 }
 #footer1{
-	background-color: #f5f6fa;
+		background-color: #f5f6fa;
 }
 #footer2{
 	background-color: white;
@@ -71,38 +81,16 @@ footer img{
 a{
 	text-decoration:none;
 }
-#aside1{
-	float: right;
-	margin-top: 300px;
-	margin-left: 1490px;
-	position: fixed;
+table{
+	margin: -20px 0 50px 10px;
 }
-#aside1 li{
-	text-align: center;
-	margin-bottom: 5px;
-	}
-#aside2{
-	float: left;
-	border: 0px solid #bbbbbb;
-	margin: 210px 10px 10px 60px;
-	width: 265px;
-	color: #666666;
-	font-size: 16.8px;
+
+td{
+	padding: 8px 26px 8px 10px;
 }
-#aside2 li{
-padding: 15px 0 15px 10px;
-border-bottom: 1px solid #e6e6e6;
-}
-#aside2 li img:hover{
-	transform: rotate( 180deg );
-	transition: all ease 0.5s;
-}
-#aside2_li_bg{
-	background-color: #21a089;
-	color: white;
-}
-#aside2 img{
-	margin-bottom: -6px;
+
+#b{
+	padding-top: 150px;
 }
 #address{
 float: left;
@@ -128,59 +116,110 @@ margin: 8px 350px 0 50px;
 	margin: 0px 0 0 1260px;
 	top: 25px;
 }
-#img_r {
-	float: right;
+#ex1{
+	border-bottom: 2px solid #21a089 ;
 }
-#sub2 {
-	margin-top: 80px;
-	border-top: 1px solid #bbbbbb;
-	border-bottom: 1px solid #f2f2f2;
+#ex2{
+	border-bottom: 2px solid #4a75b9;
 }
-#sub2 img{
-	padding: -10px 40px 0 55px;
-	margin-bottom: -20px;
+#ex3{
+	border-bottom: 2px solid #c24ea8;
 }
-.line{
-		margin: 20px 0 10px 10px;
-		border: 1px solid  #000000;
-		width: 910px;
-	}
-.line2{
-		 margin: 10px;
-		 border-bottom: 1px solid  #e6e6e6;
-		 width: 912px;
-	}
-#main1{
-	list-style-type: none;
+#ex4{
+	border-bottom: 2px solid #21a089;
 }
-#main2{
-	padding-left: 10px;
+#sub1_t{
+margin-top: -5px;
 }
-#ex_title{
-	color:#11416b;
-	padding: 20px 0 5px 0;
-}
-#ex_title img{
-	margin-left: -32px;
-	margin-bottom: -1px;
-	font-size: 20px;
-}
-#ex{
-	padding-left:10px;
-	margin: 10px 10px 10px 10px;
-}
-#ex li{
-	padding: 4px;
+#sub1_t li{
+	display: inline-block;
+	text-align: center;
+	margin-right: 20px;
+	width: 280px;
+	height: 40px;
+	padding-top: 20px;
+	font-weight: 700;
+	background-color: white;
 	font-size: 15px;
 }
-#ex img{
-	margin-left: -32px;
-	margin-bottom: -5px;
+#sub3_t{
+margin-top: -5px;
 }
-#ex a{
-	color:#075290;
+#sub3_t li{
+	display: inline-block;
+	text-align: center;
+	margin-right: 20px;
+	width: 280px;
+	height: 40px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-weight: 700;
+	background-color: white;
+	font-size: 15px;
+	border-bottom: 2px solid #bbbbbb;
+}
+#sub3_t li:hover{
+	border-bottom: 2px solid #21a089;
+}
+#sub1{
+
+}
+#sub1 li{
+	display: inline-block;
+	text-align: center;
+	margin-right: 20px;
+	overflow: hidden;
+	width: 280px;
+	height: 150px;
+}
+#sub1 img{
+	width: 280px;
+	height: 150px;
+	display: block;
+	margin-bottom: -21px;
 }
 
+#sub1 img:hover{
+	transform: scale(1.1);
+	transition: transform 0.5s;
+}
+
+#sub2 {
+background-color: white;
+margin-right: 5px;
+font-size: 14px;
+width: 1195px;
+}
+#sub2 li{
+	display: inline-block;
+	padding: 15px 32px 50px 32px;
+	text-align: center;
+}
+#sub3{
+
+}
+#sub3 li{
+	display: inline-block;
+	text-align: center;
+	margin-right: 20px;
+	overflow: hidden;
+}
+#sub3 img{
+	width: 280px;
+	height: 180px;
+	display: block;
+}
+#sub3 img:hover{
+	transform: scale(1.1);
+	transition: transform 0.5s;
+}
+#sub5{
+
+}
+#sub5 li{
+	display: inline-block;
+	margin-right: 15px;
+}
 .s2 {
 	position:relative;
 	right: 15px;
@@ -223,6 +262,53 @@ margin: 8px 350px 0 50px;
 	position: relative;
 	top:500px;
 }
+.con{
+	text-decoration: none;
+}
+#border{
+	border: 1px solid #bbbbbb;
+	background-color: white;
+	padding: 20px;
+	margin: 5px 10px 0 75px;
+	width: 750px;
+	height: 230px;
+}
+#line{
+	border-top: 1px solid #bbbbbb;
+	width: 720px;
+	margin-left: 10px;
+}
+#head{
+	padding: 0 10px 10px 10px;
+	font-weight: bold;
+}
+#head_img{
+	position: relative;
+	left:230px;
+	top: 5px;
+}
+#side{
+	float: right;
+	padding: 10px;
+	margin-top: 20px;
+	width: 350px;
+	font-size:14px;
+	position: static;
+	font-weight: 600;
+}
+#side li{
+	padding-bottom: 12px;
+}
+#side img{}
+#news{
+	width: 370px;
+	margin-top: 35px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	padding: 40px -5px 50px 0;
+	position: absolute;
+	}
+
 #search{
 	height: 40px;
 	width: 500px;
@@ -231,6 +317,7 @@ margin: 8px 350px 0 50px;
 	position: static;
 	margin: 30px 0 0 650px;
 }
+
 input{
 	font-size: 15px;
 	width: 430px;
@@ -252,14 +339,49 @@ button{
 	left: 549px;
 	top: -42px;
 }
+#aside{
+	text-align: center;
+	border: 1px solid #bbbbbb;
+	margin-top: 5px;
+	font-weight: 700;
+}
+#aside td{
+	padding: 11px 25px 11px 25px;
+
+}
+#aside_word{
+	border: 1px solid #e1e6eb;
+	background-color: #f5f6fa; 
+	padding: 6px 13px;
+	color: #66768c;
+	font-weight: 600;
+	position: static;
+}
+#aside_word:hover{
+	background-color: #21a089;
+	color: white;
+}
+#aside_t{
+	background-color: white;
+	border-top: 1px solid #043772;
+	color: #043772;
+}
+#aside_t2{
+	background-color: #f5f6fa;
+	border: 1px solid #e1e6eb;
+}
+
 #sub4 {
 	margin: 80px 100px 20px 0px;
 	border-top: 1px solid #bbbbbb;
+	border-bottom: 1px solid #f2f2f2;
 	width: 1485px;
 	padding: 0 110px 0 375px;
 }
 #sub4 img{
 	margin-bottom: -20px;
+}
+.topMenuLi{
 }
 #topMenu {
             height: 20px;  
@@ -267,7 +389,7 @@ button{
             position: relative;
             border-bottom: 1px solid #bbbbbb;
             text-align: left;
-
+            z-index: 100;
 
             background-color: white; /* [추가] 늘어난만큼 배경색도 보이도록 수정 */
     }
@@ -341,7 +463,7 @@ button{
     	font-size: 14px;
     	color: #787878;
     }
-   .top_d1{
+.top_d1{
 	position: relative;
 	background-color: white;
 	width: 210px;
@@ -389,11 +511,11 @@ button{
 	left: 210px;
 	top: -55px;
 }
+
 </style>
 
 </head>
 <body id="page">
-
 	<header>
 		<div id="logo">
 		<a href="./index.html"><img src="./img/logo.png"></a>
@@ -433,15 +555,13 @@ button{
 		<a href="./intro.html"><img src="./img/language.PNG"></a>
 	</div>
 	</header>
-
 	<div class="clear"></div>
-
 	<nav>
 		<ul class="topMenuLi">
 			<li id="topMenu"> <div class="con"><span style="color:#21a089; border-bottom: 3px solid #21a089; padding-bottom: 14px; "><a class="menuLink" href="./contents.html">감염병</a></span></div></li>
 			<ul class="submenu">
 				<li><span style="position: absolute; top: 20px; padding-right: 100px;">감염병정보</span></li>
-				<li><span style="position: absolute; top: 15px; left: 550px; padding-right: 50px; padding-left: 10px;  border-left: 1px solid #bbbbbb;">
+				<li><span style="position: absolute; top: 40px; left: 550px; padding-right: 50px; border-left: 1px solid #bbbbbb;">
 					<table>
 				<tr><th>해외감염정보</th></tr>
 				<tr>
@@ -473,65 +593,11 @@ button{
 
 	<div class="clear"></div>
 
-	<aside>
-		<ui id="aside2">
-			<li> <span style="font-size:25px; margin-left: -10px;">감염병</span>  </li>
-			<li id="aside2_li_bg"> <a href="./contents.html" style="color: white;"><b>감염병정보</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <img src="./img/up.PNG"></a> </li>
-			<li> <a href="http://www.cdc.go.kr/contents.es?mid=a20102050000" style="color: #666666;"><b>해외감염정보</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <img src="./img/down.PNG"></a></li>
-			<li> <a href="http://www.cdc.go.kr/npt/biz/npp/portal/nppIssueIcdMain.do" style="color: #666666;"><b>감염병유행정보<img src="./img/ex2.PNG"></b> &emsp;&emsp;&emsp; &nbsp; &nbsp; <img src="./img/down.PNG"></a></li>
-			<li> <a href="http://tbzero.cdc.go.kr/tbzero/main.do?pageEvent=N" style="color: #666666;"><b>결핵<img src="./img/ex2.PNG"></b> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; <img src="./img/down.PNG"></a></li>
-			<li> <a href="https://nip.cdc.go.kr/irgd/index.html" style="color: #666666;"><b>예방접종<img src="./img/ex2.PNG"></b> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; <img src="./img/down.PNG"></a></li>
-			<li> <a href="http://www.cdc.go.kr/contents.es?mid=a20106000000" style="color: #666666;"><b>감염병간행물</b> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; <img src="./img/down.PNG"></a></li>
-		</ui>
-	</aside>
+	<div id="b">
 	<section>
-		<ul id="main1">
-			<li id="img_r"> <img src="./img/home.PNG"> </li>
-			<li> <br><br> &nbsp; <span style="font-size: 26px"><b>감염병정보</b> </span>
-			<span style="position: absolute; left:1440px; top:205px;">
-				<img src="./img/share.PNG">
-			</span>
-				<span style="position: absolute; left:1495px; top:210px;">
-				<img src="./img/print.PNG"> 
-			</span>
-			</div>
-		</li>
-			<li> <div class="line"></div> </li>
-			<li> <span style="position: relative; left: -20px;"><img src="./img/day.PNG"></span>
-			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <img src="./img/view.PNG"> </li>
-			<li> <div class="line2"></div> </li>
-			<li><br><br>
-				<span style="margin-left: -20px;"><a href="http://www.cdc.go.kr/npt/biz/npp/nppMain.do"><img src="./img/contents_main.PNG"></a></span></li>
-		</ul>
-
-		<div id=main2>
-		<h3 id="ex_title"> <img src="./img/rectangle.png"> 감염병포털 소개 </h3>
-		<ul id="ex">
-			<li>법정감염병(전수/표본)의 현황(통계) 및 올바른 정보를 국민들이 쉽게 접근할 수 있는 <span style= "color:#000080; border-bottom: 1px solid #075290;"><a href="http://www.cdc.go.kr/npt/"> 감염병 정보 포털사이트</span><img src="./img/ex.PNG" width="17px"></a></li>
-		</ul>
-
-		<h3 id="ex_title"> <img src="./img/rectangle.png"> 통계</h3>
-		<ul id="ex">
-			<li>· <span style= "color:#075290; border-bottom: 1px solid #075290;"><a href="http://www.cdc.go.kr/npt/biz/npp/ist/simple/simplePdStatsMain.do">전수감시 감염병</a></span><img src="./img/ex.PNG" width="17px">: 전수감시 감염병에 대한 주요통계, 질병별 통계, 지역별 통계, 성별/연령별 통계에 대한 통계 </li>
-			<li>· <span style= "color:#075290; border-bottom: 1px solid #075290;"><a href="http://www.cdc.go.kr/npt/biz/npp/iss/influenzaStatisticsMain.do">표본감시 감염병</a></span><img src="./img/ex.PNG" width="17px"> : 표본감시 감염병에 대한 통계 </li>
-			<li>· <span style= "color:#075290; border-bottom: 1px solid #075290;"><a href="http://www.cdc.go.kr/npt/biz/npp/portal/nppVbStatsMain.do">비브리오 감시</a></span><img src="./img/ex.PNG" width="17px"> : 해수에서 측정한 비브리오 통계 </li>
-		</ul>
-
-		<h3 id="ex_title"> <img src="./img/rectangle.png"> <span style= " color:#11416b;border-bottom: 1px solid #075290;"><a href="http://www.cdc.go.kr/npt/biz/npp/portal/nppPblctDtaMain.do?pblctDtaSeAt=7" style="color:#11416b; ">지침</span><img src="./img/ex.PNG"></a></h3>
-		<ul id="ex">
-			<li>· 법정감염병의 증상, 진단 및 치료, 신고기준, 예방과 같은 정보 </li>
-			<li>· 감염병 관리, 각 기관에서 해야하는 수행체계, 감시체계, 실험실 검사, 역학조사, 환자관리/접촉자 관리, 방역관리에 대한 정보 </li>
-		</ul>
-
-		<h3 id="ex_title"> <img src="./img/rectangle.png"> 발간자료</h3>
-		<ul id="ex">
-			<li>· <span style= "color:#075290; border-bottom: 1px solid #075290;"><a href="http://www.cdc.go.kr/npt/biz/npp/portal/nppPblctDtaMain.do?pblctDtaSeAt=1">감시연보</a></span><img src="./img/ex.PNG" width="17px"> : 감염병 신고·보고된 법정감염병 현황을 분석 정리한 자료 </li>
-			<li>· <span style= "color:#075290; border-bottom: 1px solid #075290;"><a href="http://www.cdc.go.kr/npt/biz/npp/portal/nppPblctDtaMain.do?pblctDtaSeAt=5">역학조사연보</a></span><img src="./img/ex.PNG" width="17px"> : 시·군·구 역학조사반의 신고 접수된 수인성·식품매개 감염병 집단발생에 분석 정리한 자료 </li>
-			<li>· <span style= "color:#075290; border-bottom: 1px solid #075290;"><a href="http://www.cdc.go.kr/npt/biz/npp/portal/nppPblctDtaMain.do?pblctDtaSeAt=2">주간소식지</a></span><img src="./img/ex.PNG" width="17px"> : 표본감시 감염병 주간 정보 </li>
-			<li>· <span style= "color:#075290; border-bottom: 1px solid #075290;"><a href="http://www.cdc.go.kr/npt/biz/npp/portal/nppPblctDtaMain.do?pblctDtaSeAt=3">실험실 소식지 정보</a></span><img src="./img/ex.PNG" width="17px"> : 병원체 및 매개체 주간 감시 정보 </li>
-		</ul>
-	</div>
+		<a href="http://ncov.mohw.go.kr/"><img src="./img/main_01.jpg" width="101.5%"></a>
 	</section>
+	</div>
 	<aside id="aside1">
 		<ul>
 			<li> <img src="./img/s1.PNG"> </li>
@@ -541,6 +607,176 @@ button{
 			<li class="s5"> <div style="cursor:pointer;" onclick="window.scrollTo(0,0);"><img src="./img/top_button.PNG"></div> </a> </li>
 		</ul>
 	</aside>
+
+	<section class="con">
+		<ul id="sub1">
+			<li> <a href="https://www.cdc.go.kr/contents.es?mid=a20304010900"><img src="./img/banner.png" width="250" height="150"></a> </li>
+			<li> <a href="https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015&act=view&list_no=367389&tag=&nPage=2"  ><img src="./img/banner02.png" width="250" height="150"></a> </li>
+			<li> <a href="https://www.cdc.go.kr/contents.es?mid=a20301050402"><img src="./img/banner03.jpg" width="250" height="150"></a> </li>
+			<li> <a href="https://www.cdc.go.kr/gallery.es?mid=a20503030300&bid=0004"><img src="./img/banner04.jpg" width="250" height="150"></a> </li>
+		</ul>
+		<ul id="sub1_t">
+			<li id="ex1"><a href="https://www.cdc.go.kr/contents.es?mid=a20304010900"  style="color: black">온열질환 건강수칙</a></span></li>
+			<li id="ex2"> <a href="https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015&act=view&list_no=367389&tag=&nPage=2"  style="color: black">비브리오패혈증 예방수칙</a> </li>
+			<li id="ex3"> <a href="https://www.cdc.go.kr/contents.es?mid=a20301050402"  style="color: black">진드기 매개 감염병</a> </li>
+			<li id="ex4"> <a href="https://www.cdc.go.kr/gallery.es?mid=a20503030300&bid=0004"  style="color: black">코로나19 영상자료</a> </li>
+		</ul>
+	</section>
+
+	<section>
+		<ul id="sub2">
+			<li> &emsp;<img src="./img/service.PNG"> </li>
+			<li> <a href="https://www.cdc.go.kr/cdc/travelList.es?mid=a20102010101">
+				<img src="./img/button_01.PNG" onmouseover="this.src='./img/button_01_2.PNG'" onmouseout="this.src='./img/button_01.PNG'">
+				</a>
+				<br> 국가별 질병정보
+				</li>
+			<li> <a href="https://www.cdc.go.kr/gallery.es?mid=a20503010000&bid=0002">
+				<img src="./img/button_02.PNG" onmouseover="this.src='./img/button_02_2.PNG'" onmouseout="this.src='./img/button_02.PNG'">
+				</a>
+				<br> 홍보자료</li>
+			<li> <a href="https://www.cdc.go.kr/board/board.es?mid=a20602010000&bid=0034&cg_code=C13">
+				<img src="./img/button_03.PNG" onmouseover="this.src='./img/button_03_2.PNG'" onmouseout="this.src='./img/button_03.PNG'">
+				</a>
+				<br> 간행물·통계</li>
+			<li> <a href="http://www.cdc.go.kr/contents.es?mid=a20805000000">
+				<img src="./img/button_04.PNG" onmouseover="this.src='./img/button_04_2.PNG'" onmouseout="this.src='./img/button_04.PNG'"> 
+				</a>
+				<br> 조직도·직원찾기</li>
+			<li> <a href="https://www.cdc.go.kr/board.es?mid=a20507010000&bid=0006">
+				<img src="./img/button_05.PNG" onmouseover="this.src='./img/button_05_2.PNG'" onmouseout="this.src='./img/button_05.PNG'">
+				</a>
+				<br> 법령·지침·서식</li>
+			<li> <a href="https://www.cdc.go.kr/board.es?mid=a20505000000&bid=0017">
+				<img src="./img/button_06.PNG" onmouseover="this.src='./img/button_06_2.PNG'" onmouseout="this.src='./img/button_06.PNG'">
+				</a>
+				<br> 공고/공시</li>
+		</ul>
+	</section>
+
+	<div class="clear"></div>
+
+	<section id="border">
+		<div id="head"> <span style="border-bottom:2px solid #21a089; padding-bottom: 10px; color:#21a089;">보도자료</span> &emsp;&emsp; 공지사항 &emsp;&emsp; 채용공고 &emsp;&emsp; 주간건강과질병 <span id="head_img"><a href="https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015"><img src="./img/more.PNG"></a></span> </div>
+
+		<div id="line"></div>
+		<div id="news">
+		<span style=" font-size: 19px; font-weight: bold;"> <a href="https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015&list_no=367829&act=view" style="color: #4d4d4d;">코로나바이러스감염증-19 국내 발생<img src="./img/s.PNG"><img src="./img/n.PNG"></a></span>
+		<br>
+		<ul>
+			<li><br>
+				<a href="https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015&list_no=367829&act=view"><span style="font-size: 14px; font-weight:700; color: #808080"> 코로나바이러스감염증-19 국내 발생 현황(7월 7일,정례브리핑)□질병관리본부 중앙방역대책본부(본부장 정은경)는 7월 7일 0시 현재,국내발생은 20명,  해외유입으로 2....</span></a>
+			</li>
+			<li>
+				<a href="https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015&list_no=367829&act=view"><span style="font-size: 13px; font-weight:700; color: #bbbbbb"> 2020-07-07</span></a>
+			</li>
+			<li><br><br></li>
+
+		</ul>
+	</div>
+		<ul id="side">
+			<li>
+			· <a href="https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015&list_no=367825&act=view" style="color:black;">코로나바이러스감염증-19 국내 발생 현황 (7월<img src="./img/s.PNG" width="15px"> <img src="./img/n.PNG"></a>
+		</li>
+		<li>
+			· <a href="https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015&list_no=367811&act=view" style="color:black;">코로나바이러스감염증-19 국내 발생 현황 (7월 <img src="./img/n.PNG"></a>
+		</li>
+		<li>
+			· <a href="https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015&list_no=367809&act=view" style="color:black;">코로나바이러스감염증-19 국내 발생 현황 (7월<img src="./img/s.PNG" width="15px"> <img src="./img/n.PNG"></a>
+		</li>
+		<li>
+			· <a href="https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015&list_no=367808&act=view" style="color:black;">미세먼지 건강 영향 연구 포럼 개최 (7.15)<img src="./img/s.PNG" width="15px"> <img src="./img/n.PNG"></a>
+		</li>
+		</ul>
+	</section>
+
+	<aside>
+		<table id="aside">
+			<tr>
+				<td id="aside_t">감염병정보</td><td id="aside_t2">건강정보</td><td id="aside_t2">손상정보</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<br>
+					<span id="aside_word">ㄱ</span>
+					<span id="aside_word">ㄴ</span>
+					<span id="aside_word">ㄷ</span>
+					<span id="aside_word">ㄹ</span>
+					<span id="aside_word">ㅁ</span>
+					<span id="aside_word">ㅂ</span>
+					<span id="aside_word">ㅅ</span>
+					<br><br>
+					<span id="aside_word">ㅇ</span>
+					<span id="aside_word">ㅈ</span>
+					<span id="aside_word">ㅊ</span>
+					<span id="aside_word">ㅋ</span>
+					<span id="aside_word">ㅌ</span>
+					<span id="aside_word">ㅍ</span>
+					<span id="aside_word">ㅎ</span>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3"><img src="./img/word2.PNG"></td>
+			</tr>
+		</table>
+	</aside>
+
+	<div id="clear"></div>
+
+
+	<section>
+		<div>
+		<ul id="sub5">
+			<li> <img src="./img/banner09.PNG"> </li>
+			<li> <img src="./img/banner10.PNG"> </li>
+			<li> <img src="./img/banner11.PNG"> </li>
+		</ul>
+	</div>
+	</section>
+
+	<div class="clear"></div>
+
+	<section>
+		<table>
+			<tr>
+				<td> <img src="./img/h2_news.png"> </td>
+				<td rowspan="3"> <br><a href="https://www.facebook.com/koreacdcpr">
+					<img src="./img/face.PNG" onmouseover="this.src='./img/face2.PNG'" onmouseout="this.src='./img/face.PNG'"> </a> </td>
+				<td rowspan="3"> <br><a href="https://twitter.com/KoreaCDC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+					<img src="./img/twit.PNG" onmouseover="this.src='./img/twit2.PNG'" onmouseout="this.src='./img/twit.PNG'"> </a> </td>
+				<td rowspan="3"> <br><a href="https://post.naver.com/my.nhn?memberNo=20182790">
+					<img src="./img/naver.PNG" onmouseover="this.src='./img/naver2.PNG'" onmouseout="this.src='./img/naver.PNG'"> </a></td>
+				<td rowspan="3"> <br><a href="https://www.youtube.com/channel/UCa7-3Zvxg-5Rfxgu3RQY_gw">
+					<img src="./img/you.PNG" onmouseover="this.src='./img/you2.PNG'" onmouseout="this.src='./img/you.PNG'"> </a></td>
+			</tr>
+			<tr>
+				<td> <img src="./img/h2_2.PNG"></td>
+			</tr>
+			<tr>
+				<td> <span style="font-weight:1000; font-size:15px; color:#999999;" >국가공중보건관리 중추기관으로서 국민 건강을 증진하고, 전문성·혁신·소통·신뢰를<p> 기반으로 24시간 365일 최선을 다하겠습니다.</span> </td>
+			</tr>
+		</table>
+	</section>
+
+	<div class="clear"></div>
+	<section>
+		<ul id="sub3">
+			<li> <a href="https://www.youtube.com/watch?v=WPf5XMvCjRg&feature=youtu.be">
+				<img src="./img/banner05.png" width="250" height="150"> </a> </li>
+			<li> <a href="http://www.cdc.go.kr/contents.es?mid=a20301020701"><img src="./img/banner06.png" width="250" height="150"></a> </li>
+			<li>  <a href="https://www.cdc.go.kr/gallery.es?mid=a20503020000&bid=0003&b_list=9&act=view&list_no=144674&nPage=1&vlist_no_npage=1&keyField=&keyWord=&orderby="><img src="./img/banner07.png" width="250" height="150"> </a></li>
+			<li>  <a href="http://www.cdc.go.kr/contents.es?mid=a20701000000"><img src="./img/banner08.png" width="250" height="150"> </a></li>
+		</ul>
+
+		<ul id="sub3_t">
+			<li><a href="https://www.youtube.com/watch?v=WPf5XMvCjRg&feature=youtu.be"  style="color: black"> 진짜 힘은 손 씻을 때 생긴다! <br> <span style="font-size:13px; font-weight:700; color: #808080"> 마블 콜라보 질병예방 캠페인 </span> </a></li>
+			<li><a href="http://www.cdc.go.kr/contents.es?mid=a20301020701"  style="color: black"> 중동지역을 방문하셨나요? <br> <span style="font-size:13px; font-weight:700; color: #808080"> 메르스 의심증상 발생 시 1339 </span></a> </li>
+			<li><a href="https://www.cdc.go.kr/gallery.es?mid=a20503020000&bid=0003&b_list=9&act=view&list_no=144674&nPage=1&vlist_no_npage=1&keyField=&keyWord=&orderby="  style="color: black"> 기침예절 지켜요! <br> <span style="font-size:13px; font-weight:700; color: #808080"> 기침예절은 감염병 예방의 기본수칙 </span></a> </li>
+			<li><a href="http://www.cdc.go.kr/contents.es?mid=a20701000000"  style="color: black"> 1339 질병관리본부 콜센터 <br> <span style="font-size:13px; font-weight:700; color: #808080"> 질병정보 궁금할 때 감염병이 의심될 때 </span> </a></li>
+		</ul>
+	</section>
+
+
 	<div class="clear"></div>
 	<footer id="footer2">
 	<div id="sub4">
@@ -559,6 +795,5 @@ button{
 			<img src="./img/customer.PNG">
 		</div>
 	</footer>
-
 </body>
 </html>
