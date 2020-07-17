@@ -17,16 +17,16 @@ li{
 	width: 1300px;
 	margin: auto;
 	border: 0px solid #bbbbbb;
-
 }
 header{
 	width: 1920px;
-	height: 100px;
+	height: 110px;
 	margin-left: -300px;
 	border: 0px solid #bbbbbb;
 	position: fixed;
 	background-color: white;
-	z-index: 1;
+	z-index: 1500;
+	display: inline-block;
 }
 nav{
 	width: 1920px;
@@ -35,7 +35,7 @@ nav{
 	margin-left: -300px;
 	padding-left: 350px;
 	border-top: 1px solid #e6e6e6;
-	border-bottom: 0px solid #bbbbbb;
+	border-bottom: 1px solid #bbbbbb;
 	position: fixed;
 	background-color: white;
 	z-index: 1;
@@ -48,7 +48,6 @@ nav li{
 section{
 	float: left;
 	margin: 175px 0 0 10px;
-	border: 0px solid #bbbbbb;
 	padding-bottom: 20px;
 }
 section img{
@@ -58,10 +57,13 @@ footer{
 	width: 1920px;
 	height: 140px;
 	padding: 20px 0 10px 0;
-	margin-left: -320px;
+	margin-left: -300px;
+}
+footer img{
+	margin-left: -35px;
 }
 #footer1{
-		background-color: #f5f6fa;
+	background-color: #f5f6fa;
 }
 #footer2{
 	background-color: white;
@@ -217,6 +219,10 @@ margin: 8px 350px 0 50px;
 .s4:hover img:last-child {
 	opacity:0
 }
+.s5{
+	position: relative;
+	top:500px;
+}
 #search{
 	height: 40px;
 	width: 500px;
@@ -235,15 +241,20 @@ input{
 	font-weight: 700;
 }
 button{
-	border: 0px;
-	outline: none;
-	float: right;
-	margin-right: -2px;
+	position: relative;
+	top: 0;
+	right: 0px;
+	width: 42px;
+	height: 42px;
+	border: none;
+	cursor: pointer;
+	background-image: url('./img/search.PNG');
+	left: 549px;
+	top: -42px;
 }
 #sub4 {
 	margin: 80px 100px 20px 0px;
 	border-top: 1px solid #bbbbbb;
-	border-bottom: 1px solid #f2f2f2;
 	width: 1485px;
 	padding: 0 110px 0 375px;
 }
@@ -320,7 +331,7 @@ button{
     }
     .topMenuLi:hover .submenu { 
         height: 220px;
-	box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.3);  
+        box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.3);           
     }
     .submenuLink:hover {        
         color: #21a089;                 
@@ -330,6 +341,54 @@ button{
     	font-size: 14px;
     	color: #787878;
     }
+   .top_d1{
+	position: relative;
+	background-color: white;
+	width: 210px;
+	cursor: pointer;
+	display: inline-block;
+	z-index: 3000;
+}
+.top_d1> li:hover .top_d2 {
+	background-color: white;
+	display: block;
+	visibility: visible;
+}
+
+.top_d2{
+	visibility: hidden;
+	position: absolute;
+	width: 200px;
+	background-color: white;
+	z-index: 1000;
+	border: 1px solid #bbbbbb;
+}
+
+#top_d2{
+	border-top: 2px solid #043763;
+	border-bottom: 1px solid #e1e6eb;
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+	padding: 15px 0;
+	color: #043763;
+}
+#top_d2_i{
+	font-size: 14px;
+	font-weight: 700;
+	color: #666666;
+	padding: 6px 0;
+}
+
+#top_d2_i span{
+	font-style: oblique;
+}
+
+#eng{
+	position: relative;
+	left: 210px;
+	top: -55px;
+}
 </style>
 
 </head>
@@ -337,15 +396,40 @@ button{
 
 	<header>
 		<div id="logo">
-		
 		<a href="./index.html"><img src="./img/logo.png"></a>
 	</div>
-		<div id="search">
-		<input type="text" placeholder="검색어를 입력해주세요.">
-		<button><img src="./img/search.PNG"></button>
+	<form>
+	<div id="search">
+	<input type='text' name="search"placeholder="검색어를 입력해주세요.">
 	</div>
+
+	<div>
+	<button type="submit"></button>
+	</div>
+
+	</form>
+	
 	<div id="top">
-		<img src="./img/top_one.PNG">
+		<ul class="top_d1">
+			<li> <img src="./img/top_one.PNG"><img src="./img/top_down.PNG" onmouseover="this.src='./img/top_up.PNG'" onmouseout="this.src='./img/top_down.PNG'">
+				<ul class="top_d2">
+					<li id="top_d2"> 인기키워드 </li>
+					<br>
+					<li id="top_d2_i">&emsp; <span>1</span> &emsp;&nbsp;코로나19</li>
+					<li id="top_d2_i">&emsp; <span>2</span> &emsp;&nbsp;자가격리</li>
+					<li id="top_d2_i">&emsp; <span>3</span> &emsp;&nbsp;메르스</li>
+					<li id="top_d2_i">&emsp; <span>4</span> &emsp;&nbsp;코로나19예방수칙</li>
+					<li id="top_d2_i">&emsp; <span>5</span> &emsp;&nbsp;예방접종</li>
+					<li id="top_d2_i">&emsp; <span>6</span> &emsp;&nbsp;사회적거리두기</li>
+					<li id="top_d2_i">&emsp; <span>7</span> &emsp;&nbsp;대응지침</li>
+					<li id="top_d2_i">&emsp; <span>8</span> &emsp;&nbsp;손씻기</li>
+					<li id="top_d2_i">&emsp; <span>9</span> &emsp;&nbsp;마스크</li>
+					<li id="top_d2_i">&emsp; <span>10</span> &emsp;여름철감염병</li>
+					<br>
+				</ul>
+			</li>
+		</ul>
+	<div id="eng">
 		<a href="./intro.html"><img src="./img/language.PNG"></a>
 	</div>
 	</header>
@@ -354,10 +438,10 @@ button{
 
 	<nav>
 		<ul class="topMenuLi">
-			<li id="topMenu"> <div class="con"><a class="menuLink" href="./contents.html">감염병</a></div></li>
+			<li id="topMenu"> <div class="con"><span style="color:#21a089; border-bottom: 3px solid #21a089; padding-bottom: 14px; "><a class="menuLink" href="./contents.html">감염병</a></span></div></li>
 			<ul class="submenu">
 				<li><span style="position: absolute; top: 20px; padding-right: 100px;">감염병정보</span></li>
-				<li><span style="position: absolute; top: 15px; left: 550px; padding-right: 50px; padding-left: 10px;  border-left: 1px solid #bbbbbb; height:; 100px;">
+				<li><span style="position: absolute; top: 15px; left: 550px; padding-right: 50px; padding-left: 10px;  border-left: 1px solid #bbbbbb;">
 					<table>
 				<tr><th>해외감염정보</th></tr>
 				<tr>
@@ -392,12 +476,12 @@ button{
 	<aside>
 		<ui id="aside2">
 			<li> <span style="font-size:25px; margin-left: -10px;">감염병</span>  </li>
-			<li id="aside2_li_bg"> <b>감염병정보</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <img src="./img/up.PNG"> </li>
-			<li> <b>해외감염정보</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <img src="./img/down.PNG"></li>
-			<li> <b>감염병유행정보<img src="./img/ex2.PNG"></b> &emsp;&emsp;&emsp; &nbsp; &nbsp; <img src="./img/down.PNG"></li>
-			<li> <b>결핵<img src="./img/ex2.PNG"></b> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; <img src="./img/down.PNG"></li>
-			<li> <b>예방접종<img src="./img/ex2.PNG"></b> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; <img src="./img/down.PNG"></li>
-			<li> <b>감염병간행물</b> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; <img src="./img/down.PNG"></li>
+			<li id="aside2_li_bg"> <a href="./contents.html" style="color: white;"><b>감염병정보</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <img src="./img/up.PNG"></a> </li>
+			<li> <a href="http://www.cdc.go.kr/contents.es?mid=a20102050000" style="color: #666666;"><b>해외감염정보</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <img src="./img/down.PNG"></a></li>
+			<li> <a href="http://www.cdc.go.kr/npt/biz/npp/portal/nppIssueIcdMain.do" style="color: #666666;"><b>감염병유행정보<img src="./img/ex2.PNG"></b> &emsp;&emsp;&emsp; &nbsp; &nbsp; <img src="./img/down.PNG"></a></li>
+			<li> <a href="http://tbzero.cdc.go.kr/tbzero/main.do?pageEvent=N" style="color: #666666;"><b>결핵<img src="./img/ex2.PNG"></b> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; <img src="./img/down.PNG"></a></li>
+			<li> <a href="https://nip.cdc.go.kr/irgd/index.html" style="color: #666666;"><b>예방접종<img src="./img/ex2.PNG"></b> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; <img src="./img/down.PNG"></a></li>
+			<li> <a href="http://www.cdc.go.kr/contents.es?mid=a20106000000" style="color: #666666;"><b>감염병간행물</b> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; <img src="./img/down.PNG"></a></li>
 		</ui>
 	</aside>
 	<section>
@@ -417,7 +501,7 @@ button{
 			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <img src="./img/view.PNG"> </li>
 			<li> <div class="line2"></div> </li>
 			<li><br><br>
-				<span style="margin-left: -20px;"><img src="./img/contents_main.PNG"></span></li>
+				<span style="margin-left: -20px;"><a href="http://www.cdc.go.kr/npt/biz/npp/nppMain.do"><img src="./img/contents_main.PNG"></a></span></li>
 		</ul>
 
 		<div id=main2>
@@ -433,7 +517,7 @@ button{
 			<li>· <span style= "color:#075290; border-bottom: 1px solid #075290;"><a href="http://www.cdc.go.kr/npt/biz/npp/portal/nppVbStatsMain.do">비브리오 감시</a></span><img src="./img/ex.PNG" width="17px"> : 해수에서 측정한 비브리오 통계 </li>
 		</ul>
 
-		<h3 id="ex_title"> <img src="./img/rectangle.png"> <span style= " color:#11416b;border-bottom: 1px solid #075290;"><a href="http://www.cdc.go.kr/npt/biz/npp/portal/nppPblctDtaMain.do?pblctDtaSeAt=7">지침</span><img src="./img/ex.PNG"></a></h3>
+		<h3 id="ex_title"> <img src="./img/rectangle.png"> <span style= " color:#11416b;border-bottom: 1px solid #075290;"><a href="http://www.cdc.go.kr/npt/biz/npp/portal/nppPblctDtaMain.do?pblctDtaSeAt=7" style="color:#11416b; ">지침</span><img src="./img/ex.PNG"></a></h3>
 		<ul id="ex">
 			<li>· 법정감염병의 증상, 진단 및 치료, 신고기준, 예방과 같은 정보 </li>
 			<li>· 감염병 관리, 각 기관에서 해야하는 수행체계, 감시체계, 실험실 검사, 역학조사, 환자관리/접촉자 관리, 방역관리에 대한 정보 </li>
@@ -448,12 +532,13 @@ button{
 		</ul>
 	</div>
 	</section>
-	<aside>
-		<ul id="aside1">
+	<aside id="aside1">
+		<ul>
 			<li> <img src="./img/s1.PNG"> </li>
 			<li class="s2"> <img src="./img/s2_2.png"><img src="./img/s2.PNG"> </li>
 			<li class="s3"> <img src="./img/s3_2.png"><img src="./img/s3.PNG"> </li>
 			<li class="s4"> <img src="./img/s4_2.png"><img src="./img/s4.PNG"> </li>
+			<li class="s5"> <div style="cursor:pointer;" onclick="window.scrollTo(0,0);"><img src="./img/top_button.PNG"></div> </a> </li>
 		</ul>
 	</aside>
 	<div class="clear"></div>
