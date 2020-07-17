@@ -18,7 +18,7 @@ li{
 	margin: auto;
 	border: 0px solid #bbbbbb;
 	background-image: url('./img/bg.png');
-	background-repeat: no-repeat;
+	background-repeat: repeat-y;
 
 }
 header{
@@ -28,7 +28,7 @@ header{
 	border: 0px solid #bbbbbb;
 	position: fixed;
 	background-color: white;
-	z-index: 1;
+	z-index: 1500;
 	display: inline-block;
 }
 nav{
@@ -258,12 +258,12 @@ width: 1195px;
 .s4:hover img:last-child {
 	opacity:0
 }
-.con{
+.s5{
+	position: relative;
+	top:500px;
 }
-.con:hover{
-	color: #21a089;
-	border-bottom: 3px solid #21a089;
-	padding-bottom: 14px;
+.con{
+	text-decoration: none;
 }
 #border{
 	border: 1px solid #bbbbbb;
@@ -281,6 +281,11 @@ width: 1195px;
 #head{
 	padding: 0 10px 10px 10px;
 	font-weight: bold;
+}
+#head_img{
+	position: relative;
+	left:230px;
+	top: 5px;
 }
 #side{
 	float: right;
@@ -312,6 +317,7 @@ width: 1195px;
 	position: static;
 	margin: 30px 0 0 650px;
 }
+
 input{
 	font-size: 15px;
 	width: 430px;
@@ -322,10 +328,16 @@ input{
 	font-weight: 700;
 }
 button{
-	border: 0px;
-	outline: none;
-	float: right;
-	margin-right: -2px;
+	position: relative;
+	top: 0;
+	right: 0px;
+	width: 42px;
+	height: 42px;
+	border: none;
+	cursor: pointer;
+	background-image: url('./img/search.PNG');
+	left: 549px;
+	top: -42px;
 }
 #aside{
 	text-align: center;
@@ -336,6 +348,18 @@ button{
 #aside td{
 	padding: 11px 25px 11px 25px;
 
+}
+#aside_word{
+	border: 1px solid #e1e6eb;
+	background-color: #f5f6fa; 
+	padding: 6px 13px;
+	color: #66768c;
+	font-weight: 600;
+	position: static;
+}
+#aside_word:hover{
+	background-color: #21a089;
+	color: white;
 }
 #aside_t{
 	background-color: white;
@@ -357,13 +381,15 @@ button{
 #sub4 img{
 	margin-bottom: -20px;
 }
+.topMenuLi{
+}
 #topMenu {
             height: 20px;  
             width: 55px;       /* [변경] 하위 메뉴와 동일하게 맞춤 */
             position: relative;
             border-bottom: 1px solid #bbbbbb;
             text-align: left;
-
+            z-index: 100;
 
             background-color: white; /* [추가] 늘어난만큼 배경색도 보이도록 수정 */
     }
@@ -426,7 +452,8 @@ button{
 
     }
     .topMenuLi:hover .submenu { 
-        height: 220px;           
+        height: 220px;
+        box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.3);           
     }
     .submenuLink:hover {        
         color: #21a089;                 
@@ -436,21 +463,95 @@ button{
     	font-size: 14px;
     	color: #787878;
     }
+.top_d1{
+	position: relative;
+	background-color: white;
+	width: 210px;
+	cursor: pointer;
+	display: inline-block;
+	z-index: 3000;
+}
+.top_d1> li:hover .top_d2 {
+	background-color: white;
+	display: block;
+	visibility: visible;
+}
+
+.top_d2{
+	visibility: hidden;
+	position: absolute;
+	width: 200px;
+	background-color: white;
+	z-index: 1000;
+	border: 1px solid #bbbbbb;
+}
+
+#top_d2{
+	border-top: 2px solid #043763;
+	border-bottom: 1px solid #e1e6eb;
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+	padding: 15px 0;
+	color: #043763;
+}
+#top_d2_i{
+	font-size: 14px;
+	font-weight: 700;
+	color: #666666;
+	padding: 6px 0;
+}
+
+#top_d2_i span{
+	font-style: oblique;
+}
+
+#eng{
+	position: relative;
+	left: 210px;
+	top: -55px;
+}
+
 </style>
 
 </head>
 <body id="page">
 	<header>
 		<div id="logo">
-		
-		<a href="./index.html"><img src="./img/logo.png"></a>
+		<img src="./img/logo.png">
 	</div>
-		<div id="search">
-		<input type="text" placeholder="검색어를 입력해주세요.">
-		<button><img src="./img/search.PNG"></button>
+	<form>
+	<div id="search">
+	<input type='text' name="search"placeholder="검색어를 입력해주세요.">
 	</div>
+
+	<div>
+	<button type="submit"></button>
+	</div>
+
+	</form>
+	
 	<div id="top">
-		<img src="./img/top_one.PNG">
+		<ul class="top_d1">
+			<li> <img src="./img/top_one.PNG"><img src="./img/top_down.PNG" onmouseover="this.src='./img/top_up.png'" onmouseout="this.src='./img/top_down.PNG'">
+				<ul class="top_d2">
+					<li id="top_d2"> 인기키워드 </li>
+					<br>
+					<li id="top_d2_i">&emsp; <span>1</span> &emsp;&nbsp;코로나19</li>
+					<li id="top_d2_i">&emsp; <span>2</span> &emsp;&nbsp;자가격리</li>
+					<li id="top_d2_i">&emsp; <span>3</span> &emsp;&nbsp;메르스</li>
+					<li id="top_d2_i">&emsp; <span>4</span> &emsp;&nbsp;코로나19예방수칙</li>
+					<li id="top_d2_i">&emsp; <span>5</span> &emsp;&nbsp;예방접종</li>
+					<li id="top_d2_i">&emsp; <span>6</span> &emsp;&nbsp;사회적거리두기</li>
+					<li id="top_d2_i">&emsp; <span>7</span> &emsp;&nbsp;대응지침</li>
+					<li id="top_d2_i">&emsp; <span>8</span> &emsp;&nbsp;손씻기</li>
+					<li id="top_d2_i">&emsp; <span>9</span> &emsp;&nbsp;마스크</li>
+					<li id="top_d2_i">&emsp; <span>10</span> &emsp;여름철감염병</li>
+					<br>
+				</ul>
+			</li>
+		</ul>
+	<div id="eng">
 		<a href="./intro.html"><img src="./img/language.PNG"></a>
 	</div>
 	</header>
@@ -494,7 +595,7 @@ button{
 
 	<div id="b">
 	<section>
-		<a href="http://ncov.mohw.go.kr/"> <img src="./img/main_01.jpg" width="101.5%"> </a>
+		<a href="http://ncov.mohw.go.kr/"><img src="./img/main_01.jpg" width="101.5%"></a>
 	</section>
 	</div>
 	<aside id="aside1">
@@ -503,21 +604,22 @@ button{
 			<li class="s2"> <img src="./img/s2_2.png"><img src="./img/s2.PNG"> </li>
 			<li class="s3"> <img src="./img/s3_2.png"><img src="./img/s3.PNG"> </li>
 			<li class="s4"> <img src="./img/s4_2.png"><img src="./img/s4.PNG"> </li>
+			<li class="s5"> <div style="cursor:pointer;" onclick="window.scrollTo(0,0);"><img src="./img/top_button.PNG"></div> </a> </li>
 		</ul>
 	</aside>
 
-	<section>
+	<section class="con">
 		<ul id="sub1">
-			<li> <img src="./img/banner.png" width="250" height="150"> </li>
-			<li> <img src="./img/banner02.png" width="250" height="150"> </li>
-			<li> <img src="./img/banner03.jpg" width="250" height="150"> </li>
-			<li> <img src="./img/banner04.jpg" width="250" height="150"> </li>
+			<li> <a href="https://www.cdc.go.kr/contents.es?mid=a20304010900"><img src="./img/banner.png" width="250" height="150"></a> </li>
+			<li> <a href="https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015&act=view&list_no=367389&tag=&nPage=2"  ><img src="./img/banner02.png" width="250" height="150"></a> </li>
+			<li> <a href="https://www.cdc.go.kr/contents.es?mid=a20301050402"><img src="./img/banner03.jpg" width="250" height="150"></a> </li>
+			<li> <a href="https://www.cdc.go.kr/gallery.es?mid=a20503030300&bid=0004"><img src="./img/banner04.jpg" width="250" height="150"></a> </li>
 		</ul>
 		<ul id="sub1_t">
-			<li id="ex1"> 온열질환 건강수칙 </li>
-			<li id="ex2"> 비브리오패혈증 예방수칙 </li>
-			<li id="ex3"> 진드기 매개 감염병 </li>
-			<li id="ex4"> 코로나19 영상자료 </li>
+			<li id="ex1"><a href="https://www.cdc.go.kr/contents.es?mid=a20304010900"  style="color: black">온열질환 건강수칙</a></span></li>
+			<li id="ex2"> <a href="https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015&act=view&list_no=367389&tag=&nPage=2"  style="color: black">비브리오패혈증 예방수칙</a> </li>
+			<li id="ex3"> <a href="https://www.cdc.go.kr/contents.es?mid=a20301050402"  style="color: black">진드기 매개 감염병</a> </li>
+			<li id="ex4"> <a href="https://www.cdc.go.kr/gallery.es?mid=a20503030300&bid=0004"  style="color: black">코로나19 영상자료</a> </li>
 		</ul>
 	</section>
 
@@ -555,18 +657,18 @@ button{
 	<div class="clear"></div>
 
 	<section id="border">
-		<div id="head"> <span style="border-bottom:2px solid #21a089; padding-bottom: 10px; color:#21a089;">보도자료</span> &emsp;&emsp; 공지사항 &emsp;&emsp; 채용공고 &emsp;&emsp; 주간건강과질병 </div>
+		<div id="head"> <span style="border-bottom:2px solid #21a089; padding-bottom: 10px; color:#21a089;">보도자료</span> &emsp;&emsp; 공지사항 &emsp;&emsp; 채용공고 &emsp;&emsp; 주간건강과질병 <span id="head_img"><a href="https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015"><img src="./img/more.PNG"></a></span> </div>
 
 		<div id="line"></div>
 		<div id="news">
-		<span style="color: #4d4d4d; font-size: 19px; font-weight: bold;"> 코로나바이러스감염증-19 국내 발생<img src="./img/s.PNG"><img src="./img/n.PNG"></span>
+		<span style=" font-size: 19px; font-weight: bold;"> <a href="https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015&list_no=367829&act=view" style="color: #4d4d4d;">코로나바이러스감염증-19 국내 발생<img src="./img/s.PNG"><img src="./img/n.PNG"></a></span>
 		<br>
 		<ul>
 			<li><br>
-				<span style="font-size: 14px; font-weight:700; color: #808080"> 코로나바이러스감염증-19 국내 발생 현황(7월 7일,정례브리핑)□질병관리본부 중앙방역대책본부(본부장 정은경)는 7월 7일 0시 현재,국내발생은 20명,  해외유입으로 2....</span>
+				<a href="https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015&list_no=367829&act=view"><span style="font-size: 14px; font-weight:700; color: #808080"> 코로나바이러스감염증-19 국내 발생 현황(7월 7일,정례브리핑)□질병관리본부 중앙방역대책본부(본부장 정은경)는 7월 7일 0시 현재,국내발생은 20명,  해외유입으로 2....</span></a>
 			</li>
 			<li>
-				<span style="font-size: 13px; font-weight:700; color: #bbbbbb"> 2020-07-07</span>
+				<a href="https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015&list_no=367829&act=view"><span style="font-size: 13px; font-weight:700; color: #bbbbbb"> 2020-07-07</span></a>
 			</li>
 			<li><br><br></li>
 
@@ -574,16 +676,16 @@ button{
 	</div>
 		<ul id="side">
 			<li>
-			· 한국-이탈리아 국립보건연구원, 화상회의를 통<img src="./img/s.PNG" width="15px"> <img src="./img/n.PNG">
+			· <a href="https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015&list_no=367825&act=view" style="color:black;">코로나바이러스감염증-19 국내 발생 현황 (7월<img src="./img/s.PNG" width="15px"> <img src="./img/n.PNG"></a>
 		</li>
 		<li>
-			· [보도설명자료] 동아일보_비축물자 폐기 관련 <img src="./img/n.PNG">
+			· <a href="https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015&list_no=367811&act=view" style="color:black;">코로나바이러스감염증-19 국내 발생 현황 (7월 <img src="./img/n.PNG"></a>
 		</li>
 		<li>
-			· 코로나바이러스감염증-19 국내 발생 현황(7월<img src="./img/s.PNG" width="15px"> <img src="./img/n.PNG">
+			· <a href="https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015&list_no=367809&act=view" style="color:black;">코로나바이러스감염증-19 국내 발생 현황 (7월<img src="./img/s.PNG" width="15px"> <img src="./img/n.PNG"></a>
 		</li>
 		<li>
-			· (참고)[7.14.화.09시] 식약처와 질본, 세계고혈<img src="./img/s.PNG" width="15px"> <img src="./img/n.PNG">
+			· <a href="https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015&list_no=367808&act=view" style="color:black;">미세먼지 건강 영향 연구 포럼 개최 (7.15)<img src="./img/s.PNG" width="15px"> <img src="./img/n.PNG"></a>
 		</li>
 		</ul>
 	</section>
@@ -594,7 +696,24 @@ button{
 				<td id="aside_t">감염병정보</td><td id="aside_t2">건강정보</td><td id="aside_t2">손상정보</td>
 			</tr>
 			<tr>
-				<td colspan="3"><img src="./img/word.PNG"></td>
+				<td colspan="3">
+					<br>
+					<span id="aside_word">ㄱ</span>
+					<span id="aside_word">ㄴ</span>
+					<span id="aside_word">ㄷ</span>
+					<span id="aside_word">ㄹ</span>
+					<span id="aside_word">ㅁ</span>
+					<span id="aside_word">ㅂ</span>
+					<span id="aside_word">ㅅ</span>
+					<br><br>
+					<span id="aside_word">ㅇ</span>
+					<span id="aside_word">ㅈ</span>
+					<span id="aside_word">ㅊ</span>
+					<span id="aside_word">ㅋ</span>
+					<span id="aside_word">ㅌ</span>
+					<span id="aside_word">ㅍ</span>
+					<span id="aside_word">ㅎ</span>
+				</td>
 			</tr>
 			<tr>
 				<td colspan="3"><img src="./img/word2.PNG"></td>
@@ -650,10 +769,10 @@ button{
 		</ul>
 
 		<ul id="sub3_t">
-			<li> 진짜 힘은 손 씻을 때 생긴다! <br> <span style="font-size:13px; font-weight:700; color: #808080"> 마블 콜라보 질병예방 캠페인 </span> </li>
-			<li> 중동지역을 방문하셨나요? <br> <span style="font-size:13px; font-weight:700; color: #808080"> 메르스 의심증상 발생 시 1339 </span> </li>
-			<li> 기침예절 지켜요! <br> <span style="font-size:13px; font-weight:700; color: #808080"> 기침예절은 감염병 예방의 기본수칙 </span> </li>
-			<li> 1339 질병관리본부 콜센터 <br> <span style="font-size:13px; font-weight:700; color: #808080"> 질병정보 궁금할 때 감염병이 의심될 때 </span> </li>
+			<li><a href="https://www.youtube.com/watch?v=WPf5XMvCjRg&feature=youtu.be"  style="color: black"> 진짜 힘은 손 씻을 때 생긴다! <br> <span style="font-size:13px; font-weight:700; color: #808080"> 마블 콜라보 질병예방 캠페인 </span> </a></li>
+			<li><a href="http://www.cdc.go.kr/contents.es?mid=a20301020701"  style="color: black"> 중동지역을 방문하셨나요? <br> <span style="font-size:13px; font-weight:700; color: #808080"> 메르스 의심증상 발생 시 1339 </span></a> </li>
+			<li><a href="https://www.cdc.go.kr/gallery.es?mid=a20503020000&bid=0003&b_list=9&act=view&list_no=144674&nPage=1&vlist_no_npage=1&keyField=&keyWord=&orderby="  style="color: black"> 기침예절 지켜요! <br> <span style="font-size:13px; font-weight:700; color: #808080"> 기침예절은 감염병 예방의 기본수칙 </span></a> </li>
+			<li><a href="http://www.cdc.go.kr/contents.es?mid=a20701000000"  style="color: black"> 1339 질병관리본부 콜센터 <br> <span style="font-size:13px; font-weight:700; color: #808080"> 질병정보 궁금할 때 감염병이 의심될 때 </span> </a></li>
 		</ul>
 	</section>
 
